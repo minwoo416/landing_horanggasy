@@ -1,0 +1,90 @@
+/* 헤더 */
+header {
+    height:80px;
+    display:flex; align-items:center;
+}
+header .header_wrap {
+    display:flex;
+    justify-content:space-between; align-items:center;
+    width:calc(100% - 200px);
+    margin:0 auto;  
+}
+header .header_wrap .logo {}
+header .header_wrap .logo h1 {}
+header .header_wrap .logo h1 a {}
+header .header_wrap .logo h1 a img {display:block;}
+header .header_wrap .gnb {}
+header .header_wrap .gnb ul {
+    display:flex; gap:70px;
+}
+header .header_wrap .gnb ul li {}
+header .header_wrap .gnb ul li a {font-weight:500;}
+header .header_wrap .right_menu {}
+header .header_wrap .right_menu ul {
+    display:flex; gap:30px;
+}
+header .header_wrap .right_menu ul li {}
+header .header_wrap .right_menu ul li a {
+    font-size:0.75rem; font-weight:300;
+}
+/* 메인 */
+/* ---1행 스와이퍼--- */
+main {}
+main .banner_container {position:relative;}
+main .banner_container .swiper {}
+main .banner_container .swiper .swiper-wrapper {}
+main .banner_container .swiper .swiper-wrapper img {display:block; width:100%;}
+main .banner_container .banner_text {
+    position:absolute; right:80px; bottom:100px;
+    z-index:900;
+    text-align:center;
+}
+main .banner_container .banner_text h2 {
+    font-size:2.813rem; 
+    font-weight:700;
+    margin-bottom:40px;
+    color:#fff;
+    text-shadow: 0px 0px 5px 0px #ccc;
+}
+main .banner_container .banner_text .line {
+    width:250px; height:2px;
+    background:#fff;
+    margin:0 auto 20px;
+}
+main .banner_container .banner_text .text {
+    font-size:1.875rem;
+    font-weight:500;
+    line-height:1.5;
+    color:#fff;
+    text-shadow: 0px 0px 5px 0px #ccc;
+}
+/* 2행 간략소개 */
+main .description {
+    text-align:center;
+    padding:100px 0;
+}
+main .description .description_container {
+    width:1042px; margin:0 auto;
+}
+main .description .description_container .description_title {}
+main .description .description_container .description_title p {
+    font-size:1.125rem; font-weight:500;
+}
+main .description .description_container .description_title h3 {
+    font-size:1.875rem; font-weight:800; margin:20px 0 50px;
+}
+main .description .description_container .description_wrap {
+    display:flex; align-items:center; gap:50px;
+    text-align:left;
+}
+main .description .description_container .description_wrap .description_left {}
+main .description .description_container .description_wrap .description_left img {}
+main .description .description_container .description_wrap .description_right {}
+main .description .description_container .description_wrap .description_right p {}
+main .description .description_container .description_wrap .description_right p:nth-of-type(1) {
+    font-size:1.125rem; line-height:2;
+    text-decoration: underline;
+    margin-bottom:50px;
+}
+main .description .description_container .description_wrap .description_right p:nth-of-type(2) {line-height:2;}
+/* 푸터 */
