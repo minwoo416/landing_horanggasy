@@ -87,4 +87,95 @@ main .description .description_container .description_wrap .description_right p:
     margin-bottom:50px;
 }
 main .description .description_container .description_wrap .description_right p:nth-of-type(2) {line-height:2;}
+/* 3행 층별소개 */
+main .floor_container {
+    padding:100px 0;
+    background:url(../images/floor_bg.jpg) no-repeat center / cover;
+    position:relative;
+    z-index: 0;
+    width:100%;
+    text-align:center;
+}
+main .floor_container .floor_wrap {
+    max-width:1050px; margin:0 auto;
+}
+main .floor_container .floor_wrap h3 {
+    font-size:1.875rem; font-weight:800;
+}
+main .floor_container .floor_wrap .floor_description {
+    margin-top:50px;
+}
+main .floor_container .floor_wrap .floor_description .floor_description_wrap {}
+main .floor_container .floor_wrap .floor_description .floor_description_wrap1 {}
+main .floor_container .floor_wrap .floor_description .floor_description_wrap2 {
+    display:flex; justify-content:end;
+    margin-top:50px;
+}
+main .floor_container .floor_wrap .floor_description .floor_description_wrap .floor {
+    display:flex; align-items:center; gap:50px;
+}
+main .floor_container .floor_wrap .floor_description .floor_description_wrap .floor1 {
+    text-align:left;
+}
+main .floor_container .floor_wrap .floor_description .floor_description_wrap .floor2 {
+    text-align:right;
+
+}
+main .floor_container .floor_wrap .floor_description .floor_description_wrap .floor .floor_photo {}
+main .floor_container .floor_wrap .floor_description .floor_description_wrap .floor .floor_photo img {display:block;}
+main .floor_container .floor_wrap .floor_description .floor_description_wrap .floor .floor_content {}
+main .floor_container .floor_wrap .floor_description .floor_description_wrap .floor .floor_content .floor_title {
+    margin-bottom:50px;
+    font-size:1.25rem; font-weight:600;
+}
+main .floor_container .floor_wrap .floor_description .floor_description_wrap .floor .floor_content ul {
+    display:flex; flex-direction:column; gap:10px;
+}
+main .floor_container .floor_wrap .floor_description .floor_description_wrap .floor .floor_content ul li {}
+/* 4행 객실소개 */
+main .room_container {padding:100px 0;}
+main .room_container .room_wrap {
+    max-width:1420px; margin:0 auto; 
+    height:784px;
+    text-align:center;
+    position:relative;
+}
+main .room_container .room_wrap h3 {
+    font-size:1.875rem; font-weight:800;
+}
+main .room_container .room_wrap .swiper {
+    margin:50px auto;
+    overflow:hidden;
+    width:1240px;
+}
+main .room_container .room_wrap .swiper .swiper-wrapper {
+    width:100%; margin:0 auto;
+}
+main .room_container .room_wrap .swiper .swiper-wrapper .swiper-slide {
+    width:400px !important;
+}
+main .room_container .room_wrap .swiper .swiper-wrapper .swiper-slide:nth-of-type(4) {/* background:coral; */}
+main .room_container .room_wrap .swiper .swiper-wrapper .swiper-slide a {display:block; width:100%;}
+main .room_container .room_wrap .swiper .swiper-wrapper .swiper-slide a .room_title {
+    font-size:1.125rem; font-weight:500;
+}
+main .room_container .room_wrap .swiper .swiper-wrapper .swiper-slide a .room_photo {
+    margin:20px 0;
+}
+main .room_container .room_wrap .swiper .swiper-wrapper .swiper-slide a .room_photo img {display:block;}
+main .room_container .room_wrap .swiper .swiper-wrapper .swiper-slide a .main_title {
+    margin-bottom:20px;
+    font-size:1.125rem; font-weight:500;
+}
+main .room_container .room_wrap .swiper .swiper-wrapper .swiper-slide a .sub_title {
+    line-height:1.7;
+    font-size:0.875rem;
+}
+main .room_container .room_wrap .swiper-button-next {}
+main .room_container .room_wrap .swiper-button-next::after {display:none;}
+main .room_container .room_wrap .swiper-button-prev {}
+main .room_container .room_wrap .swiper-button-prev::after {display:none;}
+main .room_container .room_wrap .swiper-pagination {
+    display:flex; gap:20px; justify-content:center;
+}
 /* 푸터 */

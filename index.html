@@ -12,6 +12,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/index.js" defer></script>
 </head>
 <body>
     <header>
@@ -42,12 +43,13 @@
             <!-- 스와이퍼 배경사진 -->
             <div class="swiper banner">
                 <div class="swiper-wrapper">
-                    <img src="./images/banner01.jpg" alt="#" class="swiper-slide">
-                    <img src="./images/banner02.jpg" alt="#" class="swiper-slide">
-                    <img src="./images/banner03.jpg" alt="#" class="swiper-slide">
-                    <img src="./images/banner04.jpg" alt="#" class="swiper-slide">
-                    <img src="./images/banner05.jpg" alt="#" class="swiper-slide">
+                    <div class="swiper-slide"><img src="./images/banner01.jpg" alt="#"></div>
+                    <div class="swiper-slide"><img src="./images/banner02.jpg" alt="#"></div>
+                    <div class="swiper-slide"><img src="./images/banner03.jpg" alt="#"></div>
+                    <div class="swiper-slide"><img src="./images/banner04.jpg" alt="#"></div>
+                    <div class="swiper-slide"><img src="./images/banner05.jpg" alt="#"></div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
             <!-- 위에 문구 -->
             <div class="banner_text">
@@ -57,7 +59,7 @@
             </div>
         </div>
         <!-- 2행 소개 -->
-        <div class="description">
+        <section class="description">
             <div class="description_container">
                 <div class="description_title">
                     <p>Yangrim-dong and Horanggasinamu Hill</p>
@@ -73,7 +75,111 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <!-- 3행 층별소개 -->
+        <section class="floor_container">
+            <div class="floor_wrap">
+                <h3>층별 소개</h3>
+                <div class="floor_description">
+                    <div class="floor_description_wrap floor_description_wrap1">
+                        <div class="floor floor1">
+                            <div class="floor_photo"><img src="./images/floor01.jpg" alt=""></div>
+                            <div class="floor_content">
+                                <p class="floor_title">1ST FLOOR</p>
+                                <ul>
+                                    <li>로비 : 공용컴퓨터, 무료와이파이 제공</li>
+                                    <li>화장실 : 샴푸,린스 등 세면용품 구비, 세탁가능</li>
+                                    <li>부엌 : 밥솥, 토스트기, 전자레인지, 정수기 등 구비</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floor_description_wrap floor_description_wrap2">
+                        <div class="floor floor2">
+                            <div class="floor_content">
+                                <p class="floor_title">2ST FLOOR</p>
+                                <ul>
+                                    <li>아늑한 분위기를 원하시는 게스트를 위한 곳</li>
+                                    <li>2층 전용 거실, 2곳의 테라스 사용 가능</li>
+                                    <li>테라스에서 바베큐파티 가능</li>
+                                    <li>2층 전체 임대 가능</li>
+                                </ul>
+                            </div>
+                            <div class="floor_photo"><img src="./images/floor02.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 4행 객실소개 -->
+        <section class="room_container">
+            <div class="room_wrap">
+                <h3>객실 소개</h3>
+                <div class="swiper room">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <p class="room_title">포사이드방</p>
+                                <p class="room_photo"><img src="./images/room01.jpg" alt=""></p>
+                                <p class="main_title">아늑하고 포근한 느낌이 도는 방</p>
+                                <p class="sub_title">혼자 숙박하시는데 무리가 없도록<br>항상 쾌적한 상태를 유지하고 있습니다.</p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <p class="room_title">우월순방</p>
+                                <p class="room_photo"><img src="./images/room02.jpg" alt=""></p>
+                                <p class="main_title">넓은 창 사이로 햇볕이 들어오는 방</p>
+                                <p class="sub_title">침대 두개가 나란히 붙어있어 커플이나<br>친구들끼리 사용하기 좋은 방입니다.</p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <p class="room_title">배유지방</p>
+                                <p class="room_photo"><img src="./images/room03.jpg" alt=""></p>
+                                <p class="main_title">넓고 쾌적한 방</p>
+                                <p class="sub_title">가족 단위나 친구들과 찾아오신 게스트분들에게<br>안성맞춤인 객실입니다.</p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <p class="room_title">오웬방</p>
+                                <p class="room_photo"><img src="./images/room04.jpg" alt=""></p>
+                                <p class="main_title">몸과 마음이 따뜻해지는 방</p>
+                                <p class="sub_title">친구들이나 가족단위로 놀러와 따뜻한 온돌에서<br>하룻 밤을 보내기 좋은 방입니다.</p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <p class="room_title">서로득방</p>
+                                <p class="room_photo"><img src="./images/room05.jpg" alt=""></p>
+                                <p class="main_title">파스텔풍의 녹새 벽지와 넓은 창을 가지고 있는 방</p>
+                                <p class="sub_title">햇볕이 잘 들어 따뜻하고 아늑한 분위기를 가지고 있으며,<br>멀리 무등산이 보이는 방입니다.</p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <p class="room_title">유수마방(VIP)</p>
+                                <p class="room_photo"><img src="./images/room06.jpg" alt=""></p>
+                                <p class="main_title">아늑한 분위기의 방</p>
+                                <p class="sub_title">직접만든 옷걸이와<br>아름다운 수납장이 있는 방입니다.</p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <p class="room_title">서서평방(VIP)</p>
+                                <p class="room_photo"><img src="./images/room07.jpg" alt=""></p>
+                                <p class="main_title">조용하고 아늑한 분위기의 방</p>
+                                <p class="sub_title">많은 햇빛이 들어오고 지역 작가들이 그린<br>훌륭한 작품들이 놓여져 있는 방입니다.</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-button-next"><img src="./images/next.png" alt=""></div>
+                <div class="swiper-button-prev"><img src="./images/prev.png" alt=""></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
     </main>
     <footer></footer>
 </body>
