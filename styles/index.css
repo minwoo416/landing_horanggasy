@@ -178,4 +178,94 @@ main .room_container .room_wrap .swiper-button-prev::after {display:none;}
 main .room_container .room_wrap .swiper-pagination {
     display:flex; gap:20px; justify-content:center;
 }
+/* 5행 ad*/
+main .ad {}
+main .ad .ad_wrap {
+    background:url(../images/ad.jpg) center center / cover no-repeat;
+    height:800px; width:100%;
+    position:relative;
+}
+main .ad .ad_wrap .ad_text {
+    position:absolute;
+    left:80px; bottom:80px;
+    background:rgba(170,170,170,0.5);
+    text-align:center;  
+    padding:20px 30px;
+}
+main .ad .ad_wrap .ad_text h3 {
+    font-size:2.813rem;
+    font-weight:700;
+    color:#fff;
+}
+main .ad .ad_wrap .ad_text .line {
+    width:250px; height:2px;
+    background:#fff;
+    margin:0 auto 20px;
+    margin-top:40px;
+}
+main .ad .ad_wrap .ad_text p {
+    font-size:1.875rem;
+    font-weight:500;
+    line-height:1.5;
+    color:#fff;
+}
+/* 6행 프로그램 */
+main .program {text-align:center; padding:100px 0;}
+main .program .program_container {
+    max-width:1420px; margin:0 auto;
+}
+main .program .program_container h3 {
+    font-size:1.875rem; font-weight:800;
+}
+main .program .program_container .program_wrap {
+    display:flex; flex-flow:row nowrap; gap:35px;
+    margin-top:50px;
+}
+main .program .program_container .program_wrap li {}
+main .program .program_container .program_wrap li .program_photo {}
+main .program .program_container .program_wrap li .program_photo img {
+    width:100%; display:block;
+}
+main .program .program_container .program_wrap li .main_title {
+    margin:20px 0;
+    font-size:1.125rem; font-weight:500;
+}
+main .program .program_container .program_wrap li .sub_title {
+    font-size:0.875rem;
+    line-height:1.7;
+}
+/* 7행 주변관광지 */
+main .tourist {
+    text-align:center;
+    padding:100px 0;
+    background:red;
+}
+main .tourist .tourist_container {
+    max-width:1590px; margin:0 auto;
+    background:blue;
+}
+main .tourist .tourist_container h3 {
+    font-size:1.875rem; font-weight:800;
+}
+main .tourist .tourist_container .swiper {
+    background:yellow;
+    text-align:left;
+    margin-top:50px;
+    
+}
+main .tourist .tourist_container .swiper .swiper-wrapper {}
+main .tourist .tourist_container .swiper .swiper-wrapper .swiper-slide {
+    background:green;
+    width:300px;
+    text-align:center;
+}
+main .tourist .tourist_container .swiper .swiper-wrapper .swiper-slide .tourist_photo {width:100%;}
+main .tourist .tourist_container .swiper .swiper-wrapper .swiper-slide .tourist_photo img {width:100%; display:block;}
+main .tourist .tourist_container .swiper .swiper-wrapper .swiper-slide .main_title {}
+main .tourist .tourist_container .swiper .swiper-wrapper .swiper-slide .sub_title {}
+main .tourist .tourist_container .swiper .swiper-button-prev {}
+main .tourist .tourist_container .swiper .swiper-button-prev::after {}
+main .tourist .tourist_container .swiper .swiper-button-prev img {}
+main .tourist .tourist_container .swiper .swiper-button-next::after {}
+main .tourist .tourist_container .swiper .swiper-button-next img {}
 /* 푸터 */

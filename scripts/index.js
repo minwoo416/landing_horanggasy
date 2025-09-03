@@ -13,3 +13,14 @@ const room = new Swiper('.room_container .room',{
     slidesPerView:3,
     spaceBetween:20,
 })
+const tourist = new Swiper('.tourist_container .tourist_wrap',{
+    slidesPerView:4 ,
+    slidesPerGroup:2,
+    centeredSlides: true,
+    spaceBetween:30,
+    loop:true,
+    navigation: {
+        nextEl: ".tourist_container .swiper-button-next",
+        prevEl: ".tourist_container .swiper-button-prev",
+    },
+})
