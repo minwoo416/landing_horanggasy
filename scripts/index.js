@@ -14,8 +14,8 @@ const room = new Swiper('.room_container .room',{
     spaceBetween:20,
 })
 const tourist = new Swiper('.tourist_container .tourist_wrap',{
-    slidesPerView:4 ,
-    slidesPerGroup:2,
+    slidesPerView:3 ,
+    // slidesPerGroup:2,
     centeredSlides: true,
     spaceBetween:30,
     loop:true,
