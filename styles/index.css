@@ -38,6 +38,7 @@ main .banner_container .banner_text {
     position:absolute; right:80px; bottom:100px;
     z-index:900;
     text-align:center;
+    animation:banner 1s linear;
 }
 main .banner_container .banner_text h2 {
     font-size:2.813rem; 
@@ -66,7 +67,12 @@ main .description {
 main .description .description_container {
     width:1042px; margin:0 auto;
 }
-main .description .description_container .description_title {}
+main .description .description_container .description_title {
+    opacity:0;
+}
+main .description .description_container .description_title.active {
+    animation:banner 0.5s linear both;
+}
 main .description .description_container .description_title p {
     font-size:1.125rem; font-weight:500;
 }
@@ -78,8 +84,14 @@ main .description .description_container .description_wrap {
     text-align:left;
 }
 main .description .description_container .description_wrap .description_left {}
-main .description .description_container .description_wrap .description_left img {}
-main .description .description_container .description_wrap .description_right {}
+main .description .description_container .description_wrap .description_left img {opacity:0;}
+main .description .description_container .description_wrap .description_left img.active {
+    animation:banner 1s linear 0.5s both;
+}
+main .description .description_container .description_wrap .description_right {opacity:0;}
+main .description .description_container .description_wrap .description_right.active {
+    animation:banner 1s linear 1s both;
+}
 main .description .description_container .description_wrap .description_right p {}
 main .description .description_container .description_wrap .description_right p:nth-of-type(1) {
     font-size:1.125rem; line-height:2;
@@ -101,6 +113,10 @@ main .floor_container .floor_wrap {
 }
 main .floor_container .floor_wrap h3 {
     font-size:1.875rem; font-weight:800;
+    opacity:0;
+}
+main .floor_container .floor_wrap h3.active {
+    animation:banner 1s linear both;
 }
 main .floor_container .floor_wrap .floor_description {
     margin-top:50px;
@@ -113,13 +129,22 @@ main .floor_container .floor_wrap .floor_description .floor_description_wrap2 {
 }
 main .floor_container .floor_wrap .floor_description .floor_description_wrap .floor {
     display:flex; align-items:center; gap:50px;
+    opacity:0;
+}
+main .floor_container .floor_wrap .floor_description .floor_description_wrap .floor.active {
+    animation:banner 1s linear 1s both;
 }
 main .floor_container .floor_wrap .floor_description .floor_description_wrap .floor1 {
     text-align:left;
 }
+main .floor_container .floor_wrap .floor_description .floor_description_wrap .floor1.active {
+    animation:banner 1s linear 1s both;
+}
 main .floor_container .floor_wrap .floor_description .floor_description_wrap .floor2 {
     text-align:right;
-
+}
+main .floor_container .floor_wrap .floor_description .floor_description_wrap .floor2.active {
+    animation:banner 1s linear 1s both;
 }
 main .floor_container .floor_wrap .floor_description .floor_description_wrap .floor .floor_photo {}
 main .floor_container .floor_wrap .floor_description .floor_description_wrap .floor .floor_photo img {display:block;}
@@ -191,6 +216,10 @@ main .ad .ad_wrap .ad_text {
     background:rgba(170,170,170,0.5);
     text-align:center;  
     padding:20px 30px;
+    opacity:0;
+}
+main .ad .ad_wrap .ad_text.active {
+    animation:banner 1s linear 1s both;
 }
 main .ad .ad_wrap .ad_text h3 {
     font-size:2.813rem;
@@ -310,4 +339,8 @@ footer .footer_container .footer_info address {
     font-weight:300;
     line-height:2.0;
     color:#fff;
+}
+@keyframes banner {
+    0% {opacity:0; transform:translateY(50px);}
+    100% {opacity:1; transform:translateY(0px);}
 }
