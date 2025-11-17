@@ -197,8 +197,10 @@ main .room_container .room_wrap .swiper .swiper-wrapper .swiper-slide a .sub_tit
     font-size:0.875rem;
 }
 main .room_container .room_wrap .swiper-button-next {}
+main .room_container .room_wrap .swiper-button-next svg {display:none;} /* swiper 업데이트로 svg를 가려야 기본화살표 지워짐 */
 main .room_container .room_wrap .swiper-button-next::after {display:none;}
 main .room_container .room_wrap .swiper-button-prev {}
+main .room_container .room_wrap .swiper-button-prev svg {display:none;} /* swiper 업데이트로 svg를 가려야 기본화살표 지워짐 */
 main .room_container .room_wrap .swiper-button-prev::after {display:none;}
 main .room_container .room_wrap .swiper-pagination {
     display:flex; gap:20px; justify-content:center;
@@ -316,9 +318,12 @@ main .tourist .tourist_container .swiper .swiper-wrapper .swiper-slide-active::a
 main .tourist .tourist_container .swiper .swiper-wrapper .swiper-slide-active .main_title,
 main .tourist .tourist_container .swiper .swiper-wrapper .swiper-slide-active .sub_title {display:block;}
 main .tourist .tourist_container .swiper .swiper-button-prev {}
+main .tourist .tourist_container .swiper .swiper-button-prev svg {display:none;} /* swiper 업데이트로 svg를 가려야 기본화살표 지워짐 */
 main .tourist .tourist_container .swiper .swiper-button-prev::after {display:none;}
 main .tourist .tourist_container .swiper .swiper-button-prev img {}
 main .tourist .tourist_container .swiper .swiper-button-next::after {display:none;}
+main .tourist .tourist_container .swiper .swiper-button-next {}
+main .tourist .tourist_container .swiper .swiper-button-next svg {display:none;} /* swiper 업데이트로 svg를 가려야 기본화살표 지워짐 */
 main .tourist .tourist_container .swiper .swiper-button-next img {}
 /* 푸터 */
 footer {background:#6A8A00; padding:50px 100px;}
